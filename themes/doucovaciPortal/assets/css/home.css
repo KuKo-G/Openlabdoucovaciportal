@@ -1,11 +1,11 @@
 button:focus{outline:0;}
 input:focus{outline:0;}
 body {
-    background-color: black;
+    background-color: white;
     max-width: 100%;
 }
 .navbar{
-  background-color:#FDC65F;
+  background-color:#F2F2F2;
 }
 .navbar-brand>img{
   height: 35px;
@@ -16,7 +16,7 @@ body {
   box-shadow: none;
   border: none;
   background-color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 .form-inline>input{
   border: none;
@@ -25,7 +25,7 @@ body {
   background-color: black;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
   height: 40px;
   display: none;
@@ -34,21 +34,20 @@ body {
   background-color:  #D1E8E2;
 }
 .navbar-nav>button{
-  background-color: black;
+  background-color: #F2F2F2;
   text-decoration: none;
-  border: none;
-  color: white;
+  border:solid 1px black;
+  color:black;
   width: 150px;
-  border-radius: 5px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
   height: 40px;
 }
 .navbar-nav>button:hover{
-  background-color: #D1E8E2;
-  color: #1F2833;
+  background-color: black;
+  color: #F2F2F2;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 .navbar-nav>button:focus{
   text-decoration: none;
@@ -56,7 +55,7 @@ body {
 .nav-item>a{
   color: #1F2833;
   padding-right: 50px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
 }
 .nav-item>a:hover{
@@ -64,8 +63,11 @@ body {
 }
 .card{
   margin-top: 85px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   text-align: center;
+  background-color: #F2F2F2;
+  font-size: 18px;
+  border: 1px solid black;
 }
 .card img{
   height: 75%;
@@ -73,42 +75,31 @@ body {
 }
 #welcome-content1{
   max-width: 100%;
-  min-height: 1000px;
-  text-align: center;
-}
-#welcome-content2{
-  background-color: black;
-  max-width: 100%;
   min-height: 400px;
   text-align: center;
 }
-#welcome-content2 p{
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size:calc(20px + 1.5vw);
-  padding-top: 180px;
-  text-align: center;
-}
-#welcome-content2 img{
-  max-width: 400px;
-  width: 100%;
-  max-height: 400px;
-  height:auto;
-  padding-top: 50px;
+.text-area1{
+  margin-top: 50px;
+  padding: 25px;
 }
 #welcome-content1 p{
   color: black;
-  font-family: 'Poppins', sans-serif;
-  font-size:calc(20px + 1.5vw);
-  padding-top: 135px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size:calc(10px + 1.5vw);
+  padding-top: 100px;
+  padding: 50px;
+}
+#welcome-content1 h1{
+  color: black;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size:calc(18px + 1.2vw);
 }
 #welcome-content1 h5{
-  color: black;
-  font-family: 'Poppins', sans-serif;
-  font-size:calc(5px + 1.2vw);
+  font-size:calc(8px + 1.2vw);
+  font-family: 'Alegreya Sans', sans-serif;
 }
 #main-content{
-  background-color: black;
+  background-color:white;
   max-width: 100%;
   min-height: 1200px;
   background-repeat: no-repeat;
@@ -116,4 +107,10 @@ body {
 #main-content a{
   text-decoration: none;
   color: black;
+}
+.main-content-bg{
+  background-color: #F2F2F2;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-size: cover;
 }
