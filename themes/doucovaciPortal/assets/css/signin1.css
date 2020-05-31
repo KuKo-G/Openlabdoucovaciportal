@@ -1,8 +1,8 @@
 .navbar{
-  background-color:#50401f;
+  background-color:#F2F2F2;
 }
 body {
-    background-color: black;
+    background-color: white;
     max-width: 100%;
 }
 .navbar-brand>img{
@@ -14,16 +14,15 @@ body {
   box-shadow: none;
   border: none;
   background-color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 .form-inline>input{
   border: none;
-  border-radius: 5px;
   width: 50px;
   background-color: black;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
   height: 40px;
 }
@@ -31,22 +30,22 @@ body {
   background-color:  #D1E8E2;
 }
 .navbar-nav>button{
-  background-color: black;
+  background-color: #F2F2F2;
   text-decoration: none;
   border: none;
-  color: white;
+  color: black;
   width: 150px;
-  border-radius: 5px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
   height: 40px;
   cursor: pointer;
+  border: 1px solid black;
 }
 .navbar-nav>button:hover{
-  background-color: #D1E8E2;
-  color: #1F2833;
+  background-color: black;
+  color: #F2F2F2;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 .navbar-nav>button:focus{
   text-decoration: none;
@@ -54,7 +53,7 @@ body {
 .nav-item>a{
   color: #1F2833;
   padding-right: 50px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
 }
 .nav-item>a:hover{
@@ -62,16 +61,20 @@ body {
 }
      .login-container{
        height: 600px;
-       max-width: 85%;
-       background-color: black;
-       border: 1px solid white;
-       border-radius: 5px;
+       max-width: 25%;
+       background-color: #F2F2F2;
        margin-top: 100px;
+       display: block;
+       margin-right: auto;
+       margin-left: auto;
      }
 @media screen and (max-width: 600px) {
       .login-container{
         max-width: 100%;
       }
+}
+.form-group p{
+  color: black;
 }
      .login-form{
        margin: auto;
@@ -84,7 +87,6 @@ body {
        font-size: 15px;
        min-height: 48px;
        font-weight: 500;
-       border-radius: 5px;
      }
      .login-form a{
        text-decoration: none;
@@ -93,55 +95,52 @@ body {
      .login-form a:hover{
        color:#FDC65F;
      }
+     .login-container p{
+      text-align: left;
+      font-size: 25px;
+      font-family: 'Alegreya Sans', sans-serif;
+      color:black;
+    }
+    .login-container input{
+      border: 1px solid black;
+    }
 
-     .form-control:focus{
-       border-color:#FDC65F;
-       box-shadow: 0 0 0 0.1rem #FDC65F;
-     }
      .btn-custom{
-       background-color: #FDC65F;
-       border-color: #FDC65F;
-       color: #1F2833;
+       background-color: #F2F2F2;
+       color: black;
+       border: 1px solid black;
        font-size: 15px;
        font-weight: 600;
        min-height: 48px;
-       border-radius: 5px;
+       cursor: pointer;
      }
-     
 
      .btn-custom:hover{
-       background-color: #D1E8E2;
-       color: #1F2833;
+       background-color: black;
+       color: #F2F2F2;
      }
      .btn-custom:focus{
        box-shadow: 0 0 0 0.2rem #FDC65F;
      }
-     .login-container p{
-       text-align: left;
-       font-size: 25px;
-       font-family: 'Poppins', sans-serif;
-       color: white;
-
-     }
 
      .new-account{
        text-align: center;
-       font-family: 'Poppins', sans-serif; 
+       font-family: 'Alegreya Sans', sans-serif; 
      }
 
      .login-container h4{
-       color: white;
+       color: black;
      }
      
      #main-content h2{
        font-size: 60px;
-       font-family: 'Poppins', sans-serif; 
+       font-family: 'Alegreya Sans', sans-serif; 
        text-align: center;
        padding-top: 300px;
        color: white;
      }
      #main-content h3{
-       font-family: 'Poppins', sans-serif; 
+       font-family: 'Alegreya Sans', sans-serif; 
        text-align: center;
        color: white;
      }
@@ -161,8 +160,15 @@ body {
     color: #A4B3B6;
     width: 100px;
     border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Alegreya Sans', sans-serif;
     font-size: 18px;
     width: 200px;
     height: 45px;
+}
+#main-content{
+  background-color:white;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-size: cover;
+  min-height: 1000px;
 }
