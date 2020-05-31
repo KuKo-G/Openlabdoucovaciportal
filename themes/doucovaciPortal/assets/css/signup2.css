@@ -3,7 +3,7 @@ body {
     max-width: 100%;
 }
 .navbar{
-  background-color:#50401f;
+  background-color:#F2F2F2;
 }
 .navbar-brand>img{
   height: 35px;
@@ -14,7 +14,7 @@ body {
   box-shadow: none;
   border: none;
   background-color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 .form-inline>input{
   border: none;
@@ -23,7 +23,7 @@ body {
   background-color: black;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
   height: 40px;
 }
@@ -31,22 +31,21 @@ body {
   background-color:  #D1E8E2;
 }
 .navbar-nav>button{
-  background-color: black;
+  background-color: #F2F2F2;
   text-decoration: none;
-  border: none;
-  color: white;
+  border: 1px solid black;
+  color: black;
   width: 150px;
-  border-radius: 5px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
   height: 40px;
   cursor: pointer;
 }
 .navbar-nav>button:hover{
-  background-color: #D1E8E2;
-  color: #1F2833;
+  background-color: black;
+  color: #F2F2F2;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 .navbar-nav>button:focus{
   text-decoration: none;
@@ -54,76 +53,73 @@ body {
 .nav-item>a{
   color: #1F2833;
   padding-right: 50px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
 }
 .nav-item>a:hover{
   color: #D1E8E2;
 }
+.login-container{
+  height: 600px;
+  max-width: 25%;
+  background-color: #F2F2F2;
+  margin-top: 100px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 600px) {
   .login-container{
-    height: 500px;
-       max-width: 85%;
-       background-color: black;
-       border: 1px solid white;
-       border-radius: 5px;
-       margin-top: 100px;
-    
-  }
-  .login-form{
-    margin: auto;
-    width: 370px;
-    padding: 10px;
     max-width: 100%;
-    
   }
-  .login-form .form-control{
-    font-size: 15px;
-    min-height: 48px;
-    font-weight: 500;
-    border-radius: 5px;
-  }
-  .login-form a{
-    text-decoration: none;
-    color:#666;
-  }
-  .login-form a:hover{
-    color:#FDC65F;
-  }
+}
+.form-group p{
+  color: black;
+}
+     .login-form{
+       margin: auto;
+       width: 370px;
+       padding: 10px;
+       max-width: 100%;
+       
+     }
+     .login-form .form-control{
+       font-size: 15px;
+       min-height: 48px;
+       font-weight: 500;
+     }
+     .login-form a{
+       text-decoration: none;
+       color:#666;
+     }
+     .login-container p{
+      text-align: left;
+      font-size: 25px;
+      font-family: 'Alegreya Sans', sans-serif;
+      color:black;
+    }
+    .login-container input{
+      border: 1px solid black;
+    }
 
-  .form-control:focus{
-    border-color:#FDC65F;
-    box-shadow: 0 0 0 0.1rem #FDC65F;
-  }
-  .btn-custom{
-    background-color: #FDC65F;
-    border-color: #FDC65F;
-    color: #1F2833;
-    font-size: 15px;
-    font-weight: 600;
-    min-height: 48px;
-    border-radius: 5px;
-  }
-  
-
-  .btn-custom:hover{
-    background-color: #D1E8E2;
-    color: #1F2833;
-  }
-  .btn-custom:focus{
-    box-shadow: 0 0 0 0.2rem #FDC65F;
-  }
-  .login-container p{
-    text-align: left;
-    font-size: 25px;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-
-  }
+     .btn-custom{
+       background-color: #F2F2F2;
+       color: black;
+       border: 1px solid black;
+       font-size: 15px;
+       font-weight: 600;
+       min-height: 48px;
+       cursor: pointer;
+     }
+     .btn-custom:hover{
+       background-color: black;
+       color: #F2F2F2;
+     }
 
   .new-account{
     text-align: left;
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Alegreya Sans', sans-serif; 
   }
 
   .login-container h4{
@@ -132,20 +128,20 @@ body {
   
   #main-content h2{
     font-size: 60px;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Alegreya Sans', sans-serif; 
     text-align: center;
     padding-top: 300px;
     color: white;
   }
   #main-content h3{
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Alegreya Sans', sans-serif; 
     text-align: center;
     color: white;
   }
 
   .form-check-label{
       color: white;
-      font-family: 'Poppins', sans-serif; 
+      font-family: 'Alegreya Sans', sans-serif; 
   }
   .form-check{
       text-align: left;
@@ -159,3 +155,10 @@ body {
       margin-top: 45px;
       font-size: 45px;
      }
+     #main-content{
+      background-color: white;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      background-size: cover;
+      min-height: 1000px;
+    }
