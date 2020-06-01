@@ -81,7 +81,6 @@ body {
        width: 370px;
        padding: 10px;
        max-width: 100%;
-       
      }
      .login-form .form-control{
        font-size: 15px;
@@ -101,7 +100,6 @@ body {
     .login-container input{
       border: 1px solid black;
     }
-
      .btn-custom{
        background-color: #F2F2F2;
        color: black;
@@ -111,31 +109,26 @@ body {
        min-height: 48px;
        cursor: pointer;
      }
-
      .btn-custom:hover{
        background-color: black;
        color: #F2F2F2;
      }
-
-
      .new-account{
        text-align: center;
-       font-family: 'Alegreya Sans', sans-serif; 
+       font-family: 'Alegreya Sans', sans-serif;
      }
-
      .login-container h4{
        color: black;
      }
-     
      #main-content h2{
        font-size: 60px;
-       font-family: 'Alegreya Sans', sans-serif; 
+       font-family: 'Alegreya Sans', sans-serif;
        text-align: center;
        padding-top: 300px;
        color: white;
      }
      #main-content h3{
-       font-family: 'Alegreya Sans', sans-serif; 
+       font-family: 'Alegreya Sans', sans-serif;
        text-align: center;
        color: white;
      }
@@ -165,5 +158,5 @@ body {
   background-repeat: no-repeat;
   max-width: 100%;
   background-size: cover;
-  min-height: 1000px;
+  min-height: 850px;
 }

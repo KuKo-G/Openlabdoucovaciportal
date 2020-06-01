@@ -1,6 +1,6 @@
 <div class="content" style="margin-bottom: 35px;">
     <div class="row"> 
-        <a class="my-author" style="color:#CDA34F;  margin-left: 15px;">{{ post.member.username }} </a>
+        <a class="my-author" style="color: #416595;  margin-left: 15px;">{{ post.member.username }} </a>
         <a style="color: white; margin-left: 2px;"> 
             <div class="date">
             <i style="text-decoration: none; color: darkgrey; font-size: 13px;">
@@ -21,13 +21,14 @@
             <input type="hidden" name="mode" value="save" />
             <input type="hidden" name="post" value="{{ post.id }}" />
             {% if topic.first_post.id == post.id %}
-                <input type="text" name="subject" class="form-control" value="{{ topic.subject }}" />
+                <input style="border-radius: 0px;border: 1px solid black;font-family: 'Alegreya Sans', sans-serif;" type="text" name="subject" class="form-control" value="{{ topic.subject }}" />
             {% endif %}
             <div class="text">
                 <textarea
                     rows="5"
                     name="content"
                     class="form-control"
+                    style="border: 1px solid black;border-radius: 0px;font-family: 'Alegreya Sans', sans-serif;"
                     >{{ post.content }}</textarea>
             </div>
             <div class="actions">
@@ -35,7 +36,7 @@
                     href="javascript:;"
                     data-request="{{ __SELF__ }}::onUpdate"
                     data-request-data="post: {{ post.id }}"
-                    style="text-decoration: none;"
+                    style="text-decoration: none;color: #416595;font-family: 'Alegreya Sans', sans-serif;"
                     data-request-update="'{{ __SELF__ }}::post': '#post-{{ post.id }}'"
                     class="save">
                     Save
@@ -44,16 +45,16 @@
                     href="javascript:;"
                     data-request="{{ __SELF__ }}::onUpdate"
                     data-request-data="post: {{ post.id }}, mode: 'delete'"
-                    style="text-decoration: none;"
+                    style="text-decoration: none;color: #416595;font-family: 'Alegreya Sans', sans-serif;"
                     data-request-update="'{{ __SELF__ }}::post': '#post-{{ post.id }}'"
-                    data-request-confirm="Are you sure?"
+                    data-request-confirm="Naozaj chcete vymazať otázku?"
                     class="delete">
                     Delete
                 </a>
                 <a href="javascript:;"
                     data-request="{{ __SELF__ }}::onUpdate"
                     data-request-data="post: {{ post.id }}, mode: 'view'"
-                    style="text-decoration: none;"
+                    style="text-decoration: none;color: #416595;font-family: 'Alegreya Sans', sans-serif;"
                     data-request-update="'{{ __SELF__ }}::post': '#post-{{ post.id }}'"
                     class="cancel">
                     Cancel
@@ -62,7 +63,7 @@
         {{ form_close() }}
     {% elseif mode == 'delete' %}
         <div class="text">
-            <p style="color: white;"><em>Vymazané</em></p>
+            <p style="color: black;"><em>Vymazané</em></p>
         </div>
     {% else %}
         <div class="text">
@@ -71,16 +72,8 @@
             </div>
         <div class="row">
         <div class="my-actions">
-            {% if topic.canPost %}
-                <a style="text-decoration: none; margin-left: 15px;" href="javascript:;"
-                    class="quote"
-                    data-request-data="post: {{ post.id }}"
-                    data-quote-button>
-                    Quote
-                </a>
-            {% endif %}
             {% if topic.canPost and post.canEdit and mode != 'edit' and mode != 'delete' %}
-                <a style="text-decoration: none;" href="javascript:;"
+                <a style="text-decoration: none;margin-left: 15px; color: #416595;" href="javascript:;"
                     class="edit"
                     data-request="onUpdate"
                     data-request-data="post: {{ post.id }}"

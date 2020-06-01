@@ -64,7 +64,7 @@ input:focus{outline:0;}
 }
 
 .answers-content {
- background-color: black;
+ background-color: #F2F2F2;
  padding: 50px;
  border-radius: 5px;
  border: 1px solid white;
@@ -75,7 +75,7 @@ input:focus{outline:0;}
 
 .replies {
   color: black;
-  background-color: lightgray;
+  background-color: #D8D8D8	;
   padding: 15px;
   font-size: 20px;
   word-wrap: break-word;

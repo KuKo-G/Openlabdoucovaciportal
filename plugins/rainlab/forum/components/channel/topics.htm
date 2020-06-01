@@ -3,7 +3,7 @@
     {% if not topics|length %}
     <h1></h1>
     {% else %}
-      <td colspan="2"><h1 class="otazky1">Otázky</h1></td>
+      <td colspan="2"><h1 class="otazky1" style="margin-top: 30px;color: black">Otázky</h1></td>
     {% endif %}
     </tr>
     {% for topic in topics %}
@@ -12,11 +12,11 @@
                 <div class="topic-indicator {{ topic.hasNew ? 'has-new' }}"></div>
             </td>
             <td>
-                <h5 style="margin-top: 20px;background-color:black;padding: 15px;border-radius: 5px; width: 78%;border: 1px solid white;">
+                <h5 style="margin-top: 20px;background-color:#F2F2F2; padding: 15px; width: 78%;border: 1px solid black;">
                     {% if topic.is_sticky %}<strong style="color: springgreen;">[Sticky]</strong>{% endif %}
                     {% if topic.is_locked %}<i class="icon icon-lock"></i> <strong style="color: red;">[Locked]</strong>{% endif %}
-                    <a href="{{ topic.url }}" style="text-decoration: none;color:white;">{{ topic.subject }}</a>
-                    <br/><small><a style="color:#CDA34F;font-size: 18px;">Pýta sa ➜</a> <a style="font-weight: bold;color: white; font-size: 18px;">{{ topic.start_member.username }}</a></small>
+                    <a href="{{ topic.url }}" style="text-decoration: none;color:black;font-weight: bold;">{{ topic.subject }}</a>
+                    <br/><small><a style="color:#416595;font-size: 18px;">Pýta sa ➜</a> <a style="color: black; font-size: 18px;">{{ topic.start_member.username }}</a></small>
                 </h5>
             </td>
         </tr>
