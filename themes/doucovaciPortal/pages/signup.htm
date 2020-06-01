@@ -25,13 +25,13 @@ requirePassword = 0
   <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
 </head>
 <body>
-<div class="container" id="main-content">
-  <div id="banner-load">
-    <img src="{{'assets/images/photo1.jpg'|theme}}" style="height: 100%; max-height: 700px; width: 100%;">
+<div id="banner-load" style="z-index: 0; position: absolute;">
+    <img src="{{'assets/images/photo1.jpg'|theme}}" style="height: 100%; width: 100%;">
 </div>
+<div class="container" id="main-content">
   <div class="row">
       <div class="col-12">
-          <div class="d-flex justify-content-center align-items-center login-container" style="margin-bottom: 50px; margin-top: -700px">
+          <div class="d-flex justify-content-center align-items-center login-container" style="margin-bottom: 50px;">
             <form method="POST" action="{{'home'|page}}" accept-charset="UTF-8" data-request="onRegister" class="login-form"><input name="_session_key" type="hidden" value="bwOXalcHuWWZbTBxh6QbtsVqzrcO6ZPj1SAR8tNn"><input name="_token" type="hidden" value="u3iVCZe2h6oTvdEIPMvdiOXRHcwptt0fRAlpDLFu">
           <div class="form-group">
           <p>Meno</p>

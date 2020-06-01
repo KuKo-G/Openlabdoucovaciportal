@@ -25,13 +25,13 @@ requirePassword = 0
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
 </head>
 <body>
+  <div id="banner-load" style="z-index: 0; position: absolute;">
+    <img src="{{'assets/images/photo1.jpg'|theme}}" style="height: 100%; width: 100%;">
+</div>
   <div class="container" id="main-content">
-    <div id="banner-load">
-      <img src="{{'assets/images/photo1.jpg'|theme}}" style="height: 100%; max-height: 800px; width: 100%;">
-  </div>
     <div class="row">
         <div class="col-12">
-            <div class="d-flex justify-content-center align-items-center login-container" style="margin-bottom: 50px; margin-top: -700px">
+            <div class="d-flex justify-content-center align-items-center login-container" style="margin-bottom: 50px;">
               <form method="POST" action="{{'signup'|page}}" accept-charset="UTF-8"  data-request="onSignin" class="login-form"><input name="_session_key" type="hidden" value="ecIxwxr1Uxr17FR6krNeA86AyUYj332PDS4LEgMf"><input name="_token" type="hidden" value="8HbToAq084eB5oxrNT3s65pMX5v31deVMxFC6JHX">
             <div class="form-group">
             <p>Email</p>
