@@ -26,7 +26,9 @@ requirePassword = 0
 </head>
 <body>
   <div class="container" id="main-content">
-  <div id="banner-load"></div>
+    <div id="banner-load">
+      <img src="{{'assets/images/photo1.jpg'|theme}}" style="height: 100%; max-height: 500px; width: 100%;">
+  </div>
     <div class="row">
         <div class="col-12">
             <div class="d-flex justify-content-center align-items-center login-container" style="margin-bottom: 50px; margin-top: -25%">
@@ -56,7 +58,7 @@ requirePassword = 0
     window.location.href = "{{ 'signup'|page }}";
 }
     //list obrazkov z ktorych sa bude zobrazovat nahodne 1
-   var images = ['{{'assets/images/photo2.jpg'|theme}}', '{{'assets/images/photo3.jpg'|theme}}', '{{'assets/images/photo1.jpg'|theme}}', '{{'assets/images/photo4.jpg'|theme}}'];
-    $('<img class="fade-in" src="' + images[Math.floor(Math.random() * images.length)] + '" style="height: 100%; max-height: 500px; width: 100%;">').appendTo('#banner-load');
+   //var images = ['{{'assets/images/photo2.jpg'|theme}}', '{{'assets/images/photo3.jpg'|theme}}', '{{'assets/images/photo1.jpg'|theme}}', '{{'assets/images/photo4.jpg'|theme}}'];
+    //$('<img class="fade-in" src="' + images[Math.floor(Math.random() * images.length)] + '" style="height: 100%; max-height: 500px; width: 100%;">').appendTo('#banner-load');
 </script>
 </body>
