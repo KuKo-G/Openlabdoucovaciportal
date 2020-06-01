@@ -27,11 +27,11 @@ requirePassword = 0
 <body>
 <div class="container" id="main-content">
   <div id="banner-load">
-    <img src="{{'assets/images/photo1.jpg'|theme}}" style="height: 100%; max-height: 500px; width: 100%;">
+    <img src="{{'assets/images/photo1.jpg'|theme}}" style="height: 100%; max-height: 700px; width: 100%;">
 </div>
   <div class="row">
       <div class="col-12">
-          <div class="d-flex justify-content-center align-items-center login-container" style="margin-bottom: 50px; margin-top: -25%">
+          <div class="d-flex justify-content-center align-items-center login-container" style="margin-bottom: 50px; margin-top: -700px">
             <form method="POST" action="{{'home'|page}}" accept-charset="UTF-8" data-request="onRegister" class="login-form"><input name="_session_key" type="hidden" value="bwOXalcHuWWZbTBxh6QbtsVqzrcO6ZPj1SAR8tNn"><input name="_token" type="hidden" value="u3iVCZe2h6oTvdEIPMvdiOXRHcwptt0fRAlpDLFu">
           <div class="form-group">
           <p>Meno</p>
@@ -58,6 +58,9 @@ requirePassword = 0
   //jednoduchy redirect
 function SignupRedirect() {
   window.location.href = "{{ 'signup'|page }}";
+}
+function SigninRedirect() {
+    window.location.href = "{{ 'signin'|page }}";
 }
   //list obrazkov z ktorych sa bude zobrazovat nahodne 1
  //var images = ['{{'assets/images/photo2.jpg'|theme}}', '{{'assets/images/photo3.jpg'|theme}}', '{{'assets/images/photo1.jpg'|theme}}', '{{'assets/images/photo4.jpg'|theme}}'];
