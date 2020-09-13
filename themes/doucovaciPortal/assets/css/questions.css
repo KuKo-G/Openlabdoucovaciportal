@@ -32,7 +32,7 @@ body {
 }
 @media screen and (max-width: 1000px) { 
   .form-inline>input{
-  border: 1px solid black;
+  border: 2px solid gray;
   width: 100%;
   background-color: #F2F2F2;
   cursor: pointer;
@@ -59,7 +59,7 @@ body {
 }
 @media screen and (max-width: 1000px) { 
   .navbar-nav>button{
-  border: 1px solid black;
+  border: 2px solid black;
   width:100%;
   background-color: #F2F2F2;
   cursor: pointer;
@@ -68,6 +68,7 @@ body {
   font-size: 18px;
   height: 40px;
   text-align: center;
+  margin-top: 10px;
   }
 }
 .navbar-nav>button:hover{
