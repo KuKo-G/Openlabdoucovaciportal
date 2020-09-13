@@ -30,6 +30,19 @@ body {
   height: 40px;
   text-align: center;
 }
+@media screen and (max-width: 1000px) { 
+  .form-inline>input{
+  border: 1px solid black;
+  width: 100%;
+  background-color: #F2F2F2;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  height: 40px;
+  text-align: center;
+  }
+}
 .form-inline>input:hover{
   background-color:  black;
   color: white;
@@ -43,6 +56,19 @@ body {
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
   height: 40px;
+}
+@media screen and (max-width: 1000px) { 
+  .navbar-nav>button{
+  border: 1px solid black;
+  width:100%;
+  background-color: #F2F2F2;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  height: 40px;
+  text-align: center;
+  }
 }
 .navbar-nav>button:hover{
   background-color: black;
