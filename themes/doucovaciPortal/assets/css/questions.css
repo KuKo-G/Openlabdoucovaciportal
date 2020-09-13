@@ -57,7 +57,7 @@ body {
   font-size: 18px;
   height: 40px;
 }
-@media screen and (max-width: 1000px) { 
+@media screen and (max-width: 992px) { 
   .navbar-nav>button{
   border: 2px solid black;
   width:100%;
@@ -103,4 +103,38 @@ body {
   text-align:center;
   font-size: 20px;
   font-weight: bold;
+}
+.form-inline>a{
+  background-color: #F2F2F2;
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  width: 150px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding: 6px;
+}
+.form-inline>a:hover{
+  background-color: black;
+  color: #F2F2F2;
+  text-decoration: none;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+@media screen and (max-width: 992px) { 
+  .form-inline>a{
+  border: 2px solid black;
+  width:100%;
+  background-color: #F2F2F2;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  height: 40px;
+  text-align: center;
+  }
 }

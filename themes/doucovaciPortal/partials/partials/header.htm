@@ -9,7 +9,10 @@
   
     {% if this.page.url == '/:slug/:page?' %}
         {% if user %}
-       <a style="text-decoration: none; color: black; height: 36px;background-color: #F2F2F2; border: 1px solid black; padding: 5px; padding-left: 25px; padding-right: 25px;font-family: 'Alegreya Sans', sans-serif; font-size: 20px; font-weight: 650;" href="{{ topicPage|page }}?channel={{ channel.id }}">Pridať novú otázku</a>
+        <form class="form-inline" >
+          <a href="{{ topicPage|page }}?channel={{ channel.id }}">Pridať novú otázku</a>
+        </form>
+       
         {% else %}
         <div>
          
@@ -22,7 +25,7 @@
     <form class="form-inline">
     {% if this.page.url == '/:slug/:page?' %}
       {{ form_open({ method: 'get' })}}
-      <input type="text" name="search" style=" width: 100%;" placeholder="Vyhladať" value="{{ input('search')|e }}">
+      <input type="text" name="search" style=" width: 100%;" placeholder="Vyhladať otázku" value="{{ input('search')|e }}">
         {{ form_close() }}
     {% endif %}
     </form>
