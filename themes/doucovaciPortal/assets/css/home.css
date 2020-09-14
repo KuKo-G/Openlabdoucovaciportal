@@ -68,10 +68,12 @@ body {
   background-color: #F2F2F2;
   font-size: 18px;
   border: 1px solid black;
+  border-radius: 0px;
 }
 .card img{
   height: 100%;
   width: 100%;
+  border-radius: 0px;
 }
 #welcome-content1{
   max-width: 100%;

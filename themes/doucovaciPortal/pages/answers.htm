@@ -50,13 +50,13 @@ channelPage = "questions"
         <div class="row">
             <div class="col-md-9">
                 <div class="answers-content">
-                <h4 style="color: black;padding: 25px;font-size: 30px;text-align: center;">{{ topic.subject }}</h4>
+                <h4 style="color: black;padding-bottom: 25px;font-size: 30px;text-align: center;word-break: keep-all;">{{ topic.subject }}</h4>
                 {% partial "@posts" %}
                 {% partial "@pagination" %}
                 {% if not topic.canPost %}
-                    <p  style="color: black">
-                        Nemôžeš editovať a pridávať odpovede:
-                        {% if not member %}Musíš byť prihlásený.{% endif %}
+                    <p  style="color: #ff0000;word-break: keep-all; font-style: italic;">
+                        Pre pridávanie a upravovanie odpovede
+                        {% if not member %}musíš byť prihlásený.{% endif %}
                         {% if member.is_banned %}Tvoj účeť je zablokovaný.{% endif %}
                         {% if topic.is_locked %}Na túto otázku sa už nedá odpovedať.{% endif %}
                     </p>

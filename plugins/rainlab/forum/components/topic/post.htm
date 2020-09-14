@@ -39,7 +39,7 @@
                     style="text-decoration: none;color: #416595;font-family: 'Alegreya Sans', sans-serif;"
                     data-request-update="'{{ __SELF__ }}::post': '#post-{{ post.id }}'"
                     class="save">
-                    Save
+                    Uložiť
                 </a>
                 <a
                     href="javascript:;"
@@ -49,7 +49,7 @@
                     data-request-update="'{{ __SELF__ }}::post': '#post-{{ post.id }}'"
                     data-request-confirm="Naozaj chcete vymazať otázku?"
                     class="delete">
-                    Delete
+                    Vymazať
                 </a>
                 <a href="javascript:;"
                     data-request="{{ __SELF__ }}::onUpdate"
@@ -57,7 +57,7 @@
                     style="text-decoration: none;color: #416595;font-family: 'Alegreya Sans', sans-serif;"
                     data-request-update="'{{ __SELF__ }}::post': '#post-{{ post.id }}'"
                     class="cancel">
-                    Cancel
+                    Zrušiť
                 </a>
             </div>
         {{ form_close() }}
@@ -68,7 +68,7 @@
     {% else %}
         <div class="text">
             <div class="replies">
-                 <a>{{ post.content_html|raw }}</a>
+                 <a style="word-break: keep-all;">{{ post.content_html|raw }}</a>
             </div>
         <div class="row">
         <div class="my-actions">
@@ -78,7 +78,7 @@
                     data-request="onUpdate"
                     data-request-data="post: {{ post.id }}"
                     data-request-update="'{{ __SELF__ ~ '::post' }}': '#post-{{ post.id }}'">
-                    Edit
+                    Upraviť
                 </a>
             {% endif %}
             </div>
