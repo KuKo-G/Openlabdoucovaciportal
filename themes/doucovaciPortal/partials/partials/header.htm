@@ -25,7 +25,7 @@
     <form class="form-inline">
     {% if this.page.url == '/:slug/:page?' %}
       {{ form_open({ method: 'get' })}}
-      <input type="text" name="search" style=" width: 100%;" placeholder="Vyhladať otázku" value="{{ input('search')|e }}">
+      <input type="text" name="search" style=" width: 100%;" placeholder="Napíšte čo hľadáte" value="{{ input('search')|e }}">
         {{ form_close() }}
     {% endif %}
     </form>

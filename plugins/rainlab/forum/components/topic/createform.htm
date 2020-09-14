@@ -1,7 +1,36 @@
+<style>
+    .form-group>input{
+        width: 50%; 
+        background-color: white; 
+        color: black;
+        border-bottom: 2px solid black;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-family: 'Alegreya Sans', sans-serif;
+        border-radius: 0px;
+        word-break: keep-all;
+    }
+    @media screen and (max-width: 992px) {
+    .form-group>input {
+        width: 75%; 
+        background-color: white; 
+        color: black;
+        border-bottom: 2px solid black;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-family: 'Alegreya Sans', sans-serif;
+        border-radius: 0px;
+        word-break: keep-all;
+  }
+}
+
+</style>
 {{ form_open({ request: 'onCreate' }) }}
     <div class="form-group" style="padding-left: 20px;padding-bottom: 20px;">
         <label for="topicSubject" class="control-label" style="font-family: 'Poppins', sans-serif; font-size: 25px; color: black; ">Otázka</label>
-        <input style="width: 50%; background-color: white; color: black;border-bottom: 1px solid black;border-top: none;border-left: none;border-right: none;font-family: 'Alegreya Sans', sans-serif;" placeholder="Sem napíšte skrátenú otázku"
+        <input  placeholder="Sem napíšte skrátenú otázku"
             id="topicSubject"
             name="subject"
             type="text"
@@ -10,7 +39,7 @@
     </div>
     <div class="form-group" style="padding-left: 20px; padding-bottom: 20px;">
         <label for="topicContent" class="control-label" style="font-family: 'Poppins', sans-serif; font-size: 25px; color: black; ">Popis otázky</label>
-        <textarea placeholder="Sem napíšte podrobne otázku" style="width: 78%;border: none; background-color: white; color: black;border: 1px solid black;font-family: 'Alegreya Sans', sans-serif;"
+        <textarea placeholder="Sem napíšte podrobne otázku" style="width: 78%;word-break: keep-all; border: none; background-color: white; color: black;border: 2px solid black;font-family: 'Alegreya Sans', sans-serif;border-radius: 0px;"
             id="topicContent"
             name="content"
             rows="8"
